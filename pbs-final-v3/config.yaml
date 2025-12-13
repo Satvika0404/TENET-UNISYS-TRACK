@@ -1,0 +1,23 @@
+scoring:
+  weights:
+    latency: 0.45
+    cost: 0.25
+    reliability: 0.20
+    energy: 0.10
+
+normalization_bounds:
+  latency_ms:
+    min: 5
+    max: 4000
+  cost_usd:
+    min: 0.0001
+    max: 0.2
+  reliability:
+    min: 0.80
+    max: 0.999
+  energy_w:
+    min: 5
+    max: 400
+  congestion:
+    min: 0.0
+    max: 1.0

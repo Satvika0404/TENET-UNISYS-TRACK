@@ -1,0 +1,164 @@
+{
+  "model_version": "rf_latency_v1",
+  "trained_at_utc": "2025-12-12T22:24:28.325529",
+  "n_real_rows": 0,
+  "n_synthetic_rows": 5000,
+  "test_mae_ms": 55.967220866260824,
+  "test_rmse_ms": 70.91744521785645,
+  "test_r2": 0.9826984154472053,
+  "test_mape_pct": 6.643568153834097,
+  "best_params": {
+    "rf__min_samples_split": 5,
+    "rf__min_samples_leaf": 2,
+    "rf__max_features": 0.9,
+    "rf__max_depth": 18
+  },
+  "conformal_q90_ms": 90.33935225084578,
+  "conformal_q95_ms": 124.32293723808492,
+  "segment_metrics": [
+    {
+      "segment": "('cloud',)",
+      "by": [
+        "resource_type"
+      ],
+      "n": 270,
+      "mae_ms": 53.70847777986307,
+      "rmse_ms": 68.10595820587842
+    },
+    {
+      "segment": "('edge',)",
+      "by": [
+        "resource_type"
+      ],
+      "n": 234,
+      "mae_ms": 58.94256947181009,
+      "rmse_ms": 75.36301281519343
+    },
+    {
+      "segment": "('gpu',)",
+      "by": [
+        "resource_type"
+      ],
+      "n": 246,
+      "mae_ms": 55.61611948263835,
+      "rmse_ms": 69.56796479674077
+    },
+    {
+      "segment": "('batch',)",
+      "by": [
+        "job_type"
+      ],
+      "n": 246,
+      "mae_ms": 56.87706572809133,
+      "rmse_ms": 70.83135365669291
+    },
+    {
+      "segment": "('inference',)",
+      "by": [
+        "job_type"
+      ],
+      "n": 261,
+      "mae_ms": 51.4382555425717,
+      "rmse_ms": 64.15223172014156
+    },
+    {
+      "segment": "('training',)",
+      "by": [
+        "job_type"
+      ],
+      "n": 243,
+      "mae_ms": 59.91058758837012,
+      "rmse_ms": 77.60863562833114
+    },
+    {
+      "segment": "('cloud', 'batch')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 77,
+      "mae_ms": 50.393764751209666,
+      "rmse_ms": 62.48992280329562
+    },
+    {
+      "segment": "('cloud', 'inference')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 94,
+      "mae_ms": 47.13188480555492,
+      "rmse_ms": 57.88783346715743
+    },
+    {
+      "segment": "('cloud', 'training')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 99,
+      "mae_ms": 62.53102972724973,
+      "rmse_ms": 80.1951806579878
+    },
+    {
+      "segment": "('edge', 'batch')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 77,
+      "mae_ms": 62.30451505872019,
+      "rmse_ms": 76.57898854879627
+    },
+    {
+      "segment": "('edge', 'inference')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 83,
+      "mae_ms": 55.6679124286459,
+      "rmse_ms": 70.80138243444144
+    },
+    {
+      "segment": "('edge', 'training')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 74,
+      "mae_ms": 59.117254936547226,
+      "rmse_ms": 78.96312206231134
+    },
+    {
+      "segment": "('gpu', 'batch')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 92,
+      "mae_ms": 57.760767649411626,
+      "rmse_ms": 72.37908081567254
+    },
+    {
+      "segment": "('gpu', 'inference')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 84,
+      "mae_ms": 52.07798563466002,
+      "rmse_ms": 63.90919147741811
+    },
+    {
+      "segment": "('gpu', 'training')",
+      "by": [
+        "resource_type",
+        "job_type"
+      ],
+      "n": 70,
+      "mae_ms": 57.043199652453154,
+      "rmse_ms": 72.26093806347477
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "model_version": "et_cost_resid_v1",
+  "trained_at_utc": "2025-12-13T00:09:49.015858",
+  "rows_total": 163,
+  "rows_train": 122,
+  "rows_val": 41,
+  "features": [
+    "congestion",
+    "cpu_util",
+    "mem_util",
+    "gpu_util",
+    "net_rtt_ms",
+    "net_bw_mbps",
+    "price_per_hour_usd",
+    "reliability",
+    "power_w",
+    "urgency",
+    "payload_size_mb",
+    "requires_gpu",
+    "job_type",
+    "resource_type"
+  ],
+  "metrics": {
+    "mae_usd": 0.00010503014711710778,
+    "rmse_usd": 0.0004745027348439592,
+    "r2": 0.9550387626936582,
+    "median_ae_usd": 6.92726971514417e-06,
+    "mape": 0.1382260670325174,
+    "baseline_base_cost_mae_usd": 0.0005416864982338089,
+    "baseline_base_cost_r2": 0.004228923265708229,
+    "baseline_base_cost_mape": 0.9704078299981693
+  },
+  "conformal_q90_usd": 1.6940752655300772e-05
+}
